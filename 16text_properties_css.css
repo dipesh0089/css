@@ -1,0 +1,38 @@
+h1
+{
+    font-size: 100px;
+    text-shadow: 6px 6px 8px rebeccapurple, -3px -3px 8px rosybrown, 12px 12px 10px;
+}
+h2
+{
+    font-size: 100px;
+    text-shadow: 0 0 15px rebeccapurple;
+}
+h3
+{
+    color: saddlebrown;
+    background: slategray;
+}
+.a
+{
+    /*font-weight: bold;*/
+    /*font-weight: bolder; */
+    font-weight: 900; 
+}
+.b
+{
+    font-style: italic;
+    font-weight: 900;
+
+}
+.c
+{
+   /*text-decoration: underline;*/
+    /*text-decoration: overline;*/
+    text-decoration: line-through;
+}
+.d
+{
+    text-indent: 150px;
+    text-transform: uppercase;
+}
