@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box; margin: 0; padding: 0;}
+        .header
+        {
+            height: 100px;
+            
+            background: coral;
+            display: flex;
+
+        } 
+        .header .logo
+        {
+            height: 100px;
+            width: 20%;
+            background: lightskyblue;
+            /* float: left; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header .companyname
+        {
+            height: 100px;
+            width:80%;
+            background: coral;
+            /* float: left; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .nav
+        {
+            height: 50px;
+            background: lightgreen;
+            text-align: center;
+            line-height: 50px;
+            word-spacing: 25px
+        }
+        .nav ul
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .nav ul li
+        {
+            list-style: none;
+            display: inline;
+            /* border: 3px solid; */
+            margin-right: 20px;
+            padding: 5px 14px;
+        }
+        .nav ul li a
+        {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-family: cursive;
+            background: lightskyblue;
+            padding: 5px 15px;
+        }
+        .content
+        {
+            height: 500px;
+            background: lightseagreen;
+            display: flex;
+        }
+        .content .a1
+        {
+            height: 500px;
+            width: 25%;
+            border: 2px solid red;
+            /* box-sizing: border-box; */
+        }
+        .content .a1 .h
+        {
+            height: 250px;
+            border: 2px solid;
+            /* width: 25%; */
+        }
+        .footer
+        {
+            height: 1100px;
+            background: lightgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">logo</div>
+        <div class="companyname">company name</div>
+    </div>
+
+
+    <div class="nav">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">serives</a></li>
+            <li><a href="">Contect</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="a1"> part 1</div>
+        <div class="a1">
+            <div class="h">uo</div>
+            <div class="h">down</div>
+        </div>
+        <div class="a1"> part 3</div>
+        <div class="a1"> part 4</div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>
