@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul
+        {
+            margin: 0;
+            padding: 0;
+        }
+        li
+        {
+            list-style-type: none;
+        }
+        a
+        {
+            text-decoration: none;
+            color: black;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .effect
+        {
+            height: 5px;
+            width: 0px;
+            background-color: black;
+            transition: 1s;
+        }
+        li:hover .effect
+        {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="">Home</a>
+            <div class="effect"></div>
+        </li>
+        <li>
+            <a href="">About</a>
+            <div class="effect"></div>
+        </li>
+        <li>
+            <a href="">Service</a>
+            <div class="effect"></div>
+        </li>
+        <li>
+            <a href="">contect us</a>
+            <div class="effect"></div>
+        </li>
+    </ul>
+    
+</body>
+</html>
