@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;margin: 0;padding: 0;scroll-behavior: smooth;}
+        .nav
+        {
+            
+            background: rgb(231, 49, 49);
+            text-align: center;
+        
+            /* padding: 25px 0; */
+        }
+        .nav .me
+        {
+            /* border: 2px solid;
+            display: block; */
+            border: 2px solid;
+            display: inline;
+            margin-right: 30px;
+            position: relative;
+        }
+        .nav a
+        {
+            text-decoration: none;
+            color: blueviolet;
+            font-size: 35px;
+        }
+        .nav .drop-down
+        {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0 ;
+        }
+        .nav .me:hover .drop-down 
+        {
+            display: block;
+        }
+        #home,#about,#service,#contact 
+        {
+            height: 700px;
+            border: 3px solid blue;
+           
+        }
+        .est 
+        {
+            height: 50px;
+            width: 50px;
+            background: rgb(145, 146, 240);
+            display: block;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+                
+        }
+        /* button
+        {
+            background: blue;
+            height: 40Px;
+            width: 110px;
+            display: block;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="me"><a href="#Home">Home</a></li>
+            <li class="me"><a href="#About">About</a></li>
+            <li class="me"><a href="#service">Service</a>
+            <ul class="drop-down">
+                <li><a href="">service</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">SERVICE</a></li>
+                <li><a href="">sERVICe</a></li>
+            </ul>
+            </li>
+            <li class="me"><a href="#contact">contact</a></li>
+        </ul>
+    </div>
+    
+        <div id="home">Home</div>
+        <div id="about">About</div>
+        <div id="service">service</div>
+        <div id="contact">contect</div>
+        <a href="" class="est">top</a>
+        <!-- <button>top</button> -->
+          
+    
+</body>
+</html>
