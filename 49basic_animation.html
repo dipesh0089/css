@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+		div 
+		{
+			height: 200px;
+			width: 200px;
+			background-color: black;
+			/*margin: 200px auto;*/
+
+			/*animation-name: AnyName;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;*/
+
+			animation:AnyName 2s infinite;
+		}
+
+		@keyframes AnyName
+		{
+			/*from{background-color: black;height: 200px,width:200px}
+			to{background-color: red;height: 100px;width:100px}*/
+
+			0%{background-color: black;}
+			20%{background-color: green;transform: translateX(400px);}
+			40%{background-color: blue;transform: translateY(400px)}
+			60%{background: linear-gradient(red,blue);border-radius: 50%;height: 0;width: 0}
+			80%{background-color: white;box-shadow: 0 0 34px black}
+			100%{background-color: red;}
+		}
+
+	</style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
