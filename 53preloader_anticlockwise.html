@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            height: 200px;
+            width: 200px;
+            margin: 50px auto;
+            position: relative;
+        }
+        .a
+        {
+            height: 200px;
+            width: 200px;
+            background: transparent;
+            border: 12px solid transparent;
+            border-top: 12px solid burlywood;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 100px auto;
+            animation: p1 1s linear infinite;
+            border-radius: 50%;
+        }
+        .b
+        {
+            height: 150px;
+            width: 150px;
+            background: transparent;
+            border: 12px solid transparent;
+            border-top: 12px solid coral;
+            position: absolute;
+            top: 125px;
+            left: 25px;
+            animation: p2 2s linear infinite;
+            border-radius: 50%;
+           
+        }
+        .c
+        {
+            height: 100px;
+            width: 100px;
+            background: transparent;
+            border: 12px solid transparent;
+            border-top: 12px solid rgb(92, 66, 35);
+            position: absolute;
+            top: 150px;
+            left: 50px;
+            animation: p1 3s linear infinite;
+            border-radius: 50%;
+        }
+        @keyframes p1
+        {
+            from{transform: rotate(360deg);}
+            to{transform: rotate(0deg);}
+        }
+        @keyframes p2
+        {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="a"></div>
+        <div class="b"></div>
+            <div class="c"></div>
+    </div>
+</div>
+</body>
+</html>

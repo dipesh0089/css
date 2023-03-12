@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product-card
+        {
+            border: 2px solid blue;
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card
+        {
+            height: 350px;
+            width: 250px;
+            background: coral;
+            margin: 20px;
+            position: relative;
+            box-shadow: 0 0 22px black; 
+        }
+        .img .prd-imgfront
+        {
+            height: 250px;
+            width: 250px;
+            background: darkcyan;
+            position: absolute;
+            top:0;
+            left:0; transform: rotateY(180deg);
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        .img .prd-imgback
+        {
+            height: 250px;
+            width: 250px;
+            background: rgb(3, 32, 32);
+            position: absolute;
+            top:0;
+            left:0;
+            transform: rotateY(0deg);
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        .img .prd-view
+        {
+            height: 50px;
+            width: 250px;
+            background: blueviolet;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            line-height: 50px; 
+            /* display: none; */
+            opacity: 0;
+            transition: 1s;
+        }
+        .card .prd-info
+        {
+            height: 100px;
+            width: 250px;
+            background: darkgray;
+            position: absolute;
+            top: 250px;
+            left: 0;
+        }
+        .img:hover .prd-view
+        {
+            top: 200px;
+            /* display: block; */
+            opacity: 1;
+        }
+        .card .prd-view:hover
+        {
+            background: coral;
+        }
+        .card:hover .prd-imgfront
+        {
+            transform: rotateY(0deg); 
+        }
+        .card:hover .prd-imgback
+        {
+            transform: rotateY(180deg); 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="product-card">
+    <!--product card start-->
+    <div class="card">
+        <div class="img">
+        <div class="prd-imgfront">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+            <div class="prd-view">Quickview</div>
+        </div>
+        <div class="prd-imgback">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+        </div>
+    </div>
+        <div class="prd-info">infor</div>
+    </div>
+    <!--product card end-->
+
+    <!--product card start-->
+    <div class="card">
+        <div class="img">
+        <div class="prd-imgfront">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+            <div class="prd-view">Quickview</div>
+        </div>
+        <div class="prd-imgback">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+        </div>
+    </div>
+        <div class="prd-info">infor</div>
+    </div>
+    <!--product card end-->
+
+    <!--product card start-->
+    <div class="card">
+        <div class="img">
+        <div class="prd-imgfront">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+            <div class="prd-view">Quickview</div>
+        </div>
+        <div class="prd-imgback">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+        </div>
+    </div>
+        <div class="prd-info">infor</div>
+    </div>
+    <!--product card end-->
+
+    <!--product card start-->
+    <div class="card">
+        <div class="img">
+        <div class="prd-imgfront">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+            <div class="prd-view">Quickview</div>
+        </div>
+        <div class="prd-imgback">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+        </div>
+    </div>
+        <div class="prd-info">infor</div>
+    </div>
+    <!--product card end-->
+
+    <!--product card start-->
+    <div class="card">
+        <div class="img">
+        <div class="prd-imgfront">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+            <div class="prd-view">Quickview</div>
+        </div>
+        <div class="prd-imgback">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+        </div>
+    </div>
+        <div class="prd-info">infor</div>
+    </div>
+    <!--product card end-->
+
+    <!--product card start-->
+    <div class="card">
+        <div class="img">
+        <div class="prd-imgfront">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+            <div class="prd-view">Quickview</div>
+        </div>
+        <div class="prd-imgback">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+        </div>
+    </div>
+        <div class="prd-info">infor</div>
+    </div>
+    <!--product card end-->
+
+    <!--product card start-->
+    <div class="card">
+        <div class="img">
+        <div class="prd-imgfront">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+            <div class="prd-view">Quickview</div>
+        </div>
+        <div class="prd-imgback">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+        </div>
+    </div>
+        <div class="prd-info">infor</div>
+    </div>
+    <!--product card end-->
+
+    <!--product card start-->
+    <div class="card">
+        <div class="img">
+        <div class="prd-imgfront">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+            <div class="prd-view">Quickview</div>
+        </div>
+        <div class="prd-imgback">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+        </div>
+    </div>
+        <div class="prd-info">infor</div>
+    </div>
+    <!--product card end-->
+    
+    
+    
+    
+</div>
+</body>
+</html>
