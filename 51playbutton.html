@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        .playbutton
+        {
+            height: 150px;
+            width: 150px;
+            background-color: aqua;
+            margin: 100px auto;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: black;
+            position: relative;
+            z-index: 0;
+        }
+        i:hover
+        {
+            color: red;
+        }
+        .cir1, .cir2, .cir3
+        {
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+        }
+        .cir2
+        {
+            height: 150px;
+            width: 150px;
+            background-color: greenyellow;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+        }
+        .cir3
+        {
+            height: 150px;
+            width: 150px;
+            background-color: green;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+        }
+
+        .cir1
+		{
+			animation: ScaleMe1 1s linear infinite; 
+		}
+
+		.cir2
+		{
+			animation: ScaleMe2 1s linear infinite; 
+		}
+
+		.cir3
+		{
+			animation: ScaleMe3 1s linear infinite; 
+		}
+        @keyframes ScaleMe1
+		{
+			from{transform: scale(1);opacity: 1}
+			to{transform: scale(1.4);opacity: 0.2}
+		}
+
+		@keyframes ScaleMe2
+		{
+			from{transform: scale(1);opacity: 1}
+			to{transform: scale(1.8);opacity: 0.2}
+		}
+
+		@keyframes ScaleMe3
+		{
+			from{transform: scale(1);opacity: 1}
+			to{transform: scale(2.2);opacity: 0.2}
+		}
+    </style>
+</head>
+<body>
+    
+    <div class="playbutton">
+        <i class="fa-solid fa-play"></i>
+        <span class="cir1"></span>
+        <span class="cir2"></span>
+        <span class="cir3"></span>
+
+    </div>
+</body>
+</html>
